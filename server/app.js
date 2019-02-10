@@ -32,6 +32,4 @@ app.get('/affordability/:homeId', (req, res) => {
 
 module.exports = app;
 
-
-
 var asdf;
