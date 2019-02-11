@@ -1,5 +1,9 @@
 import React from 'react';
 
+import HomeDetails from './homeDetails';
+import SimilarHomes from './similarHomes';
+import Affordability from './affordability';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -11,7 +15,15 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        Hello World, react/webpack is working correctly
+        <div>
+          <HomeDetails />
+        </div>
+        <div>
+          <SimilarHomes />
+        </div>
+        <div>
+          <Affordability />
+        </div>
       </div>
     );
   }
