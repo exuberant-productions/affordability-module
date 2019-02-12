@@ -1,0 +1,94 @@
+body {
+  width: 666.66px;
+}
+
+.featureTitle {
+  font-size: 24px;
+  line-height: 1.4;
+  margin: 5px 0;
+  font-weight: 300;
+  font-style: normal;
+  margin-top: 0 !important;
+}
+
+.detailTitle {
+  height: 1.05em;
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid;
+  border-bottom-color: #cdd0d2;
+  margin-bottom: 20px !important;
+  box-sizing: border-box;
+}
+
+.FTh5 {
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 5px 0;
+  font-weight: 700;
+  font-style: normal;
+  padding-right: 10px !important;
+  box-sizing: border-box;
+}
+
+.detailContentFlex {
+  margin-left: -6px;
+  margin-right: -6px;
+  margin-bottom: 10px !important;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.detailContent {
+  margin-left: -6px;
+  margin-right: -6px;
+  margin-bottom: 10px !important;
+  box-sizing: border-box;
+  display: block;
+}
+
+.detailContentLeft {
+  margin-left: 16.67%;
+  width: 41.67%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  box-sizing: border-box;
+}
+
+.detailContentRight {
+  width: 41.67%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 !important;
+  padding: 0;
+}
+
+.detailContentOne {
+  margin-left: 16.66%;
+  width: 83.33%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 6px;
+  padding-right: 6px;
+  box-sizing: border-box;
+}
+
+.toggleMore {
+  color: #228959;
+  padding-top: 5px!important;
+  padding-bottom: 5px!important;
+  cursor: pointer;
+  float: right;
+  box-sizing: border-box;
+}
