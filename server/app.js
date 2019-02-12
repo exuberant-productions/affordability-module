@@ -13,7 +13,7 @@ app.use(express.static(`${__dirname}/../public`));
 app.get('/homeDetails/:homeId', (req, res) => {
   db.getHome(req.params.homeId, (err, data) => {
     if (err) {
-      throw new Error('error getting data from database');
+      throw err;
     } else {
       res.send(data);
     }
