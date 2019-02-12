@@ -9,7 +9,16 @@ class Affordability extends React.Component {
   render() {
     return (
       <div>
-        affordability inner content
+        <div>
+          <div className="featureTitle">
+            <span className="FTh5">
+              Affordability
+            </span>
+          </div>
+        </div>
+        <div>
+          ... affordability is coming soon ...
+        </div>
       </div>
     );
   }

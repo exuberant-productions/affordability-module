@@ -5,9 +5,18 @@ const PriceHistory = (props) => {
   const { priceHistory } = props;
   return (
     <div>
-      { priceHistory.price1 }
-      <br />
-      { priceHistory.price2 }
+      <div className="detailTitle">
+        <span className="FTh5">
+          Price History
+        </span>
+      </div>
+      <div className="detailContent">
+        <div className="detailContentOne">
+          { priceHistory.price1 }
+          <br />
+          { priceHistory.price2 }
+        </div>
+      </div>
     </div>
   );
 };

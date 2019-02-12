@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Overview from './overview';
 import Description from './description';
@@ -12,23 +13,23 @@ class HomeDetails extends React.Component {
   }
 
   render() {
+    const { homeDetails } = this.props;
     return (
       <div>
-        <div className="overview">
-          <Overview overview="hello" />
+        <div className="featureTitle">
+          Home Deatils
         </div>
-        <div className="description">
-          <Description description="this home is located at xxx and yyy street, with nice neighborhoods" />
-        </div>
-        <div className="features">
-          <Features features="features data" />
-        </div>
-        <div className="priceHistory">
-          <PriceHistory priceHistory={{ price1: 'price1', price2: 'price2' }} />
-        </div>
+        <Overview homeDetails={homeDetails} />
+        <Description description={homeDetails.description} />
+        <Features features="features data" />
+        <PriceHistory priceHistory={{ price1: 'price1', price2: 'price2' }} />
       </div>
     );
   }
 }
+
+HomeDetails.propTypes = {
+  homeDetails: PropTypes.instanceOf(Object).isRequired,
+};
 
 export default HomeDetails;
