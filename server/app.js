@@ -21,8 +21,13 @@ app.get('/homeDetails/:homeId', (req, res) => {
 });
 
 app.get('/similarHomes/:homeId', (req, res) => {
-  // do db stuff
-  res.send(`success /similarHomes/${req.params.homeId}`);
+  db.getSimilarHomes(req.params.homeId, (err, data) => {
+    if (err) {
+      throw err;
+    } else {
+      res.send(data);
+    }
+  });
 });
 
 app.get('/affordability/:homeId', (req, res) => {
