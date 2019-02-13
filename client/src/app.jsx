@@ -9,23 +9,29 @@ class App extends React.Component {
     super(props);
     this.state = {
       homeDetails: undefined,
+      similarHomes: undefined,
     };
   }
 
   componentDidMount() {
-    fetch('http://localhost:3001/homeDetails/1')
-      .then(response => (
-        response.json()
-      ))
-      .then((myJson) => {
-        this.setState({ homeDetails: myJson });
+    Promise.all([
+      fetch('http://localhost:3001/homeDetails/1').then(value => value.json()),
+      fetch('http://localhost:3001/similarHomes/1').then(value => value.json()),
+    ]).then(([response1, response2]) => (
+      [response1, response2]
+    ))
+      .then(([myJson1, myJson2]) => {
+        this.setState({
+          homeDetails: myJson1,
+          similarHomes: myJson2,
+        });
       })
       .catch(error => console.error(error));
   }
 
   render() {
-    const { homeDetails } = this.state;
-    if (!homeDetails) {
+    const { homeDetails, similarHomes } = this.state;
+    if (!homeDetails || !similarHomes) {
       return (
         <div>
           Failed to load data, please try again
@@ -34,12 +40,12 @@ class App extends React.Component {
     }
 
     return (
-      <div>
+      <div className="featureBody">
         <div className="feature">
           <HomeDetails homeDetails={homeDetails} />
         </div>
         <div className="feature">
-          <SimilarHomes />
+          <SimilarHomes similarHomes={similarHomes} />
         </div>
         <div className="feature">
           <Affordability totalPrice={homeDetails.totalPrice} />

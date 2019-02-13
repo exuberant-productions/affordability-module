@@ -10,10 +10,8 @@ class Affordability extends React.Component {
     return (
       <div>
         <div>
-          <div className="featureTitle">
-            <span className="FTh5">
-              Affordability
-            </span>
+          <div className="featureTitle h3">
+            Affordability
           </div>
         </div>
         <div>

@@ -16,13 +16,13 @@ class HomeDetails extends React.Component {
     const { homeDetails } = this.props;
     return (
       <div>
-        <div className="featureTitle">
-          Home Deatils
+        <div className="featureTitle h3">
+          Home Details
         </div>
         <Overview homeDetails={homeDetails} />
         <Description description={homeDetails.description} />
-        <Features features="features data" />
-        <PriceHistory priceHistory={{ price1: 'price1', price2: 'price2' }} />
+        <Features homeDetails={homeDetails} />
+        <PriceHistory priceHistoryData={homeDetails.priceHistoryData} />
       </div>
     );
   }

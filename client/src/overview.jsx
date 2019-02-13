@@ -6,12 +6,12 @@ const Overview = (props) => {
   return (
     <div>
       <div className="detailTitle">
-        <span className="FTh5">
+        <span className="FT h5">
           Overview
         </span>
       </div>
       <div className="detailContentFlex">
-        <div className="detailContentLeft">
+        <div className="detailContentLeft padLR">
           <ul>
             <li>{homeDetails.ovType}</li>
             <li>{`${homeDetails.ovRooms} Beds`}</li>
@@ -20,7 +20,7 @@ const Overview = (props) => {
             <li>{`${homeDetails.ovHowlongOnTrulia} days on Trulia`}</li>
           </ul>
         </div>
-        <div className="detailContentRight">
+        <div className="detailContentRight padLR">
           <ul>
             <li>{`${homeDetails.ovLotSize} sqft lot size`}</li>
             <li>{`${homeDetails.ovSqft} sqft`}</li>
