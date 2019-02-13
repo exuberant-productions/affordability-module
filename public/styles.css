@@ -1,13 +1,124 @@
 body {
-  width: 666.66px;
+  
 }
 
-.featureTitle {
+@font-face {
+  font-family: 'PostGrotesk';
+  src: url('PostGrotesk-Book.ttf');
+}
+@font-face {
+  font-family: 'fontello';
+  src: url('fontello.ttf');
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  font-size: 15px;
+  line-height: 1.5;
+  font-style: normal;
+  font-family: PostGrotesk;
+  color: #3b4144;
+}
+
+div {
+  box-sizing: inherit;
+  display: block;
+}
+
+span {
+  box-sizing: inherit;
+}
+
+.h3 {
   font-size: 24px;
   line-height: 1.4;
   margin: 5px 0;
   font-weight: 300;
   font-style: normal;
+}
+
+.h5 {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 5px 0;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.h6 {
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 5px 0;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.mtn {
+  margin-top: 0px !important;
+}
+
+.mbl {
+  margin-bottom: 20px !important;
+}
+
+.mbm {
+  margin-bottom: 10px !important;
+}
+
+.mbn {
+  margin-bottom: 0px !important;
+}
+
+.typeEmphasize {
+  font-weight: 700 !important;
+}
+
+.typeLowLight {
+  color: #869099;
+}
+
+.pbm {
+  padding-bottom: 10px! important;
+}
+
+.pbn {
+  padding-bottom: 0px! important;
+}
+
+.pts {
+  padding-top: 5px !important;
+}
+
+.pbt8 {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.padLR {
+  padding-left: 6px;
+  padding-right: 6px;
+  position: relative;
+  min-height: 1px;
+}
+
+.maxLimit {
+  overflow: hidden;
+  max-height: 7.5em;
+}
+
+.featureBody {
+  max-width: 1040px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+}
+
+.feature {
+  max-width:693.33px;
+  clear: both;
+}
+
+.featureTitle {
   margin-top: 0 !important;
 }
 
@@ -17,55 +128,37 @@ body {
   border-bottom-style: solid;
   border-bottom-color: #cdd0d2;
   margin-bottom: 20px !important;
-  box-sizing: border-box;
 }
 
-.FTh5 {
+.FT {
   background-color: #fff;
-  font-size: 18px;
-  line-height: 1.4;
-  margin: 5px 0;
-  font-weight: 700;
-  font-style: normal;
   padding-right: 10px !important;
-  box-sizing: border-box;
 }
 
 .detailContentFlex {
   margin-left: -6px;
   margin-right: -6px;
   margin-bottom: 10px !important;
-  box-sizing: border-box;
   display: flex;
 }
 
 .detailContent {
   margin-left: -6px;
   margin-right: -6px;
-  margin-bottom: 10px !important;
   box-sizing: border-box;
   display: block;
+  overflow: auto;
 }
 
 .detailContentLeft {
   margin-left: 16.67%;
   width: 41.67%;
   float: left;
-  position: relative;
-  min-height: 1px;
-  padding-left: 6px;
-  padding-right: 6px;
-  box-sizing: border-box;
 }
 
 .detailContentRight {
   width: 41.67%;
   float: left;
-  position: relative;
-  min-height: 1px;
-  padding-left: 6px;
-  padding-right: 6px;
-  box-sizing: border-box;
 }
 
 ul {
@@ -75,20 +168,75 @@ ul {
 }
 
 .detailContentOne {
-  margin-left: 16.66%;
+  margin-left: 16.67%;
   width: 83.33%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 6px;
-  padding-right: 6px;
-  box-sizing: border-box;
 }
 
 .toggleMore {
-  color: #228959;
   padding-top: 5px!important;
   padding-bottom: 5px!important;
   cursor: pointer;
   float: right;
-  box-sizing: border-box;
+}
+
+.toggleMore:focus {
+  outline: 0;
+}
+
+.toggleMoreText {
+  color: #228959;
+}
+
+.toggleMoreArrow {
+  color: #228959;
+  font-family: fontello;
+}
+
+.priceHistoryOne {
+  margin-left: 16.67%;
+  width: 29%;
+}
+
+.priceHistoryTwo {
+  width: 25%;
+}
+
+.priceHistoryThree {
+  width: 29%;
+}
+
+.priceHistoryLine {
+  margin-left: 16.67%;
+  width: 83.33%;
+  border: none;
+  border-bottom: 1px solid #e8e9ea;
+}
+
+.toggledContent {
+  font-family: fontello;
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1.1em;
+  margin-right: .2em;
+  vertical-align: baseline;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+}
+
+.featureSimilar {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.featureSimilarImg {
+  height: 100%;
+  object-fit: contain;
+  margin-left: 10px;
+  margin-right: 10px;
 }
