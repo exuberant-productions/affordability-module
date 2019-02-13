@@ -191,7 +191,7 @@ INSERT INTO home (totalPrice, detailsId) VALUES (1292428, 98);
 INSERT INTO home (totalPrice, detailsId) VALUES (1153892, 99);
 INSERT INTO home (totalPrice, detailsId) VALUES (742959, 100);
 INSERT INTO similarHomes (homeId, image, price, rooms, baths, address1, address2) VALUES (1, "https://s3-us-west-1.amazonaws.com/affordability-module/photo1.jpeg", 1193872, "8", "6", "4798 5th St", "Alameda CA, 93390");
-INSERT INTO similarHomes (homeId, image, price, rooms, baths, address1, address2) VALUES (1, "https://s3-us-west-1.amazonaws.com/affordability-module/photo1.jpeg", 895817, "2", "5", "3046 5th St", "Daly City CA, 94394");
+INSERT INTO similarHomes (homeId, image, price, rooms, baths, address1, address2) VALUES (1, "https://s3-us-west-1.amazonaws.com/affordability-module/photo7.jpeg", 895817, "2", "5", "3046 5th St", "Daly City CA, 94394");
 INSERT INTO similarHomes (homeId, image, price, rooms, baths, address1, address2) VALUES (1, "https://s3-us-west-1.amazonaws.com/affordability-module/photo8.jpeg", 770763, "8", "7", "1691 VanNess St", "San Francisco CA, 98683");
 INSERT INTO similarHomes (homeId, image, price, rooms, baths, address1, address2) VALUES (1, "https://s3-us-west-1.amazonaws.com/affordability-module/photo0.jpeg", 926257, "5", "0", "2342 VanNess St", "Daly City CA, 93590");
 INSERT INTO similarHomes (homeId, image, price, rooms, baths, address1, address2) VALUES (1, "https://s3-us-west-1.amazonaws.com/affordability-module/photo2.jpeg", 1423218, "8", "3", "597 University Ave", "San Francisco CA, 91246");
