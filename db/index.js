@@ -18,12 +18,13 @@ const getHome = (homeId, callback) => {
     if (err) {
       callback(err);
     } else {
-      query = 'SELECT ph.historyDate, ph.price, ph.event, ';
+      query = 'SELECT ph.id, ph.historyDate, ph.price, ph.event, ';
       query += ' phd.recordingDate, phd.contractDate, phd.salePrice, phd.priceType, phd.countyTransferTax, phd.totalTransferTax, ';
       query += ' phd.transactionType, phd.documentType, phd.priceChange, phd.source ';
-      query += ' FROM home, homeDetails as hd, priceHistory as ph, priceHistoryDetails as phd ';
-      query += ' WHERE hd.id = home.detailsId AND hd.id = ph.homeDetailsId AND phd.id = ph.detailsId ';
-      query += ` AND home.id = ${homeId}`;
+      query += ' FROM home, homeDetails as hd, priceHistory as ph ';
+      query += ' LEFT JOIN priceHistoryDetails as phd ON phd.id = ph.detailsId ';
+      query += ' WHERE hd.id = home.detailsId AND hd.id = ph.homeDetailsId ';
+      query += ` AND home.id = ${homeId} ORDER BY STR_TO_DATE(ph.historyDate, '%m/%d/%Y') DESC `;
       connection.query(query, (err2, priceHistoryData) => {
         if (err2) {
           callback(err2);
@@ -36,6 +37,21 @@ const getHome = (homeId, callback) => {
   });
 };
 
+const getSimilarHomes = (homeId, callback) => {
+  let query = 'SELECT sh.id, sh.image, sh.price, sh.rooms, sh.baths, sh.address1, sh.address2 ';
+  query += ' FROM home, similarHomes sh ';
+  query += ' WHERE home.id = sh.homeId ';
+  query += ` AND home.id = ${homeId}`;
+  connection.query(query, (err, data) => {
+    if (err) {
+      callback(err);
+    } else {
+      callback(null, data);
+    }
+  });
+};
+
 module.exports = {
   getHome,
+  getSimilarHomes,
 };
