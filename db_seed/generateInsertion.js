@@ -1,3 +1,4 @@
+/* eslint-disable */
 var getRandomNumber = (min, max) => {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -82,9 +83,9 @@ for (let i = 1; i <= 100; i++) {
 for (let i = 1; i <= 100; i++) {
 	console.log('INSERT INTO homeDetails (overviewId, description, featuresId) VALUES (' + i + ', "' +
 		details[getRandomNumber(0, details.length - 1)] + '", ' + i + ');');
-	console.log('INSERT INTO overview (type, rooms, baths, builtIn, howlongOnTrulia, sqft, pricePerSqft, priceHOA, views) VALUES (' + 
+	console.log('INSERT INTO overview (type, rooms, baths, builtIn, howlongOnTrulia, lotSize, sqft, pricePerSqft, priceHOA, views) VALUES (' + 
 		'"' + types[getRandomNumber(0, types.length - 1)] + '", "' + getRandomNumber(0, 8) + '", "' + getRandomNumber(0, 8) + '", ' +
-		getRandomNumber(1900, 2018) + ', ' + getRandomNumber(2, 30) + ', ' + getRandomNumber(1000, 5000) + ', ' + 
+		getRandomNumber(1900, 2018) + ', ' + getRandomNumber(2, 30) + ', ' + getRandomNumber(1000, 5000) + ', ' + getRandomNumber(1000, 5000) + ', ' + 
 		getRandomNumber(500, 3000) + ', ' + getRandomNumber(0, 2000) + ', ' + getRandomNumber(0, 10000) + ');');
 	console.log('INSERT INTO features (listingInfoId, publicRecordsId) VALUES (' + i + ', ' + i + ');');
 	console.log('INSERT INTO listingInfo (updatedAt, rooms, baths, type, sqft, lotSize) VALUES (' +
