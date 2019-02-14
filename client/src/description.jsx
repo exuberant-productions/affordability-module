@@ -28,9 +28,12 @@ class Description extends React.Component {
             { description }
             { description }
           </div>
-          <div className="toggleMore" onClick={this.seeMore} onKeyDown={this.seeMore} role="button" tabIndex={-1}>
-            <span className="toggleMoreArrow">&#59445; </span>
-            <span className="toggleMoreText">See More</span>
+          <div className="toggleMore" onClick={this.seeMore} onKeyDown={() => {}} role="button" tabIndex={-1}>
+            {(show) ? <span className="toggleMoreArrow">&#59505; </span> : <span className="toggleMoreArrow">&#59445; </span>}
+            <span className="toggleMoreText">
+              See
+              {(show) ? ' Less' : ' More'}
+            </span>
           </div>
         </div>
       </div>
