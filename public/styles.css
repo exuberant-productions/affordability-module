@@ -1,22 +1,43 @@
 body {
   
 }
+@font-face{
+  font-family:PostGrotesk;
+  src:url(http://s3-us-west-1.amazonaws.com/affordability-module/PostGrotesk-Book.eot);
+  src:url(http://s3-us-west-1.amazonaws.com/affordability-module/PostGrotesk-Book.eot?#iefix) format("embedded-opentype")
+  ,url(http://s3-us-west-1.amazonaws.com/affordability-module/PostGrotesk-Book.woff) format("woff")
+  ,url(http://s3-us-west-1.amazonaws.com/affordability-module/PostGrotesk-Book.ttf) format("truetype")
+  ,url(http://s3-us-west-1.amazonaws.com/affordability-module/PostGrotesk-Book.svg#PostGroteskRegular) format("svg");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
+@font-face{
+  font-family:PostGrotesk;
+  src:url(http://s3-us-west-1.amazonaws.com/affordability-module/PostGrotesk-Medium.eot);
+  src:url(http://s3-us-west-1.amazonaws.com/affordability-module/PostGrotesk-Medium.eot?#iefix) format("embedded-opentype")
+  ,url(http://s3-us-west-1.amazonaws.com/affordability-module/PostGrotesk-Medium.woff) format("woff")
+  ,url(http://s3-us-west-1.amazonaws.com/affordability-module/PostGrotesk-Medium.ttf) format("truetype")
+  ,url(http://s3-us-west-1.amazonaws.com/affordability-module/PostGrotesk-Medium.svg#PostGroteskBold) format("svg");
+  font-weight:600;
+  font-style:normal;
+  font-display:swap;
+}
 
 @font-face {
-  font-family: 'PostGrotesk';
-  src: url('PostGrotesk-Book.ttf');
-}
-@font-face {
   font-family: 'fontello';
-  src: url('fontello.ttf');
+  src:url(http://s3-us-west-1.amazonaws.com/affordability-module/fontello.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
+  font-family: PostGrotesk,sans-serif,San Francisco,Roboto,Segoe UI Bold,Arial,sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 15px;
   line-height: 1.5;
   font-style: normal;
-  font-family: PostGrotesk;
   color: #3b4144;
 }
 
@@ -27,6 +48,28 @@ div {
 
 span {
   box-sizing: inherit;
+}
+
+a {
+  color: #10a75f;
+  transition: all .15s ease-in-out;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #20c063;
+  transition: all .3s ease-in-out;
+  outline: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.clickable {
+  cursor: pointer;
+  outline : 0;
+  text-decoration: none;
 }
 
 .h3 {
@@ -51,6 +94,25 @@ span {
   margin: 5px 0;
   font-weight: 700;
   font-style: normal;
+}
+
+.h7 {
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 5px 0;
+  font-style: normal;
+}
+
+.typeEmphasize {
+  font-weight: 700 !important;
+}
+
+.txtL {
+  text-align: left;
+}
+
+.txtR {
+  text-align: right;
 }
 
 .mtn {
@@ -87,6 +149,10 @@ span {
 
 .pts {
   padding-top: 5px !important;
+}
+
+.ptn {
+  padding-top: 0px !important;
 }
 
 .pbt8 {
@@ -138,7 +204,6 @@ span {
 .detailContentFlex {
   margin-left: -6px;
   margin-right: -6px;
-  margin-bottom: 10px !important;
   display: flex;
 }
 
@@ -210,6 +275,18 @@ ul {
   width: 83.33%;
   border: none;
   border-bottom: 1px solid #e8e9ea;
+}
+
+.negativeValue {
+  color: #e13009;
+}
+
+.positiveValue {
+  color: #228959;
+}
+
+.toggleHidden {
+  display: none;
 }
 
 .toggledContent {
