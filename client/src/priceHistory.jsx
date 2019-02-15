@@ -94,7 +94,7 @@ class PriceHistory extends React.Component {
           <hr className="priceHistoryLine" />
         </div>
         {priceHistoryData.map(priceHistory => (
-          <div key={priceHistory.id} className={(priceHistory.event === 'Price Change' || priceHistory.event === 'Sold') ? 'clickable' : ''} onClick={() => this.handleToggleContentOnClick(priceHistory.id)} onKeyDown={() => {}} role="button" tabIndex={-1}>
+          <div key={priceHistory.id} className={(priceHistory.event === 'Price Change' || priceHistory.event === 'Sold') ? 'clickable' : 'notClickable'} onClick={() => this.handleToggleContentOnClick(priceHistory.id)} onKeyDown={() => {}} role="button" tabIndex={-1}>
             <div className="detailContentFlex pbn mbn">
               <div className="priceHistoryOne padLR pbm pts">
                 {`${priceHistory.historyDate}`}
