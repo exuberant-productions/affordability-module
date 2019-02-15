@@ -53,7 +53,12 @@ class SimilarHomes extends React.Component {
 
   render() {
     const { similarHomes } = this.props;
-    const { itemCount, hovered, transitionX, liked } = this.state;
+    const {
+      itemCount,
+      hovered,
+      transitionX,
+      liked,
+    } = this.state;
     return (
       <div>
         <div className="featureTitle h3 marginLeft7">
