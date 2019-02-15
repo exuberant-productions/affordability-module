@@ -44,7 +44,7 @@ class App extends React.Component {
         <div className="feature">
           <HomeDetails homeDetails={homeDetails} />
         </div>
-        <div className="feature">
+        <div className="featureSimilar">
           <SimilarHomes similarHomes={similarHomes} />
         </div>
         <div className="feature">
