@@ -34,7 +34,7 @@ class App extends React.Component {
     if (!homeDetails || !similarHomes) {
       return (
         <div>
-          Failed to load data, please try again
+          { /* Failed to load data, please try again */ }
         </div>
       );
     }
@@ -47,7 +47,9 @@ class App extends React.Component {
         <div className="featureSimilar">
           <SimilarHomes similarHomes={similarHomes} />
         </div>
-        <div className="feature">
+        <div className="mvl" />
+        <div style={{ height: '20px' }} />
+        <div className="featureAffordability">
           <Affordability totalPrice={homeDetails.totalPrice} />
         </div>
       </div>
