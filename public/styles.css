@@ -116,6 +116,10 @@ a, a:hover {
   font-weight: 400 !important;
 }
 
+.typeLowLight {
+  color: #869099;
+}
+
 .txtL {
   text-align: left;
 }
@@ -128,6 +132,18 @@ a, a:hover {
   margin-top: 0px !important;
 }
 
+.mts {
+  margin-top: 5px !important;
+}
+
+.mtm {
+  margin-top: 10px !important;
+}
+
+.mtl {
+  margin-top: 20px !important;
+}
+
 .mbl {
   margin-bottom: 20px !important;
 }
@@ -136,20 +152,24 @@ a, a:hover {
   margin-bottom: 10px !important;
 }
 
+.mbs {
+  margin-bottom: 5px;
+}
+
 .mbn {
   margin-bottom: 0px !important;
 }
 
+.mvl {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.affordabilitySection {
+}
+
 .man {
   margin: 0 !important;
-}
-
-.typeEmphasize {
-  font-weight: 700 !important;
-}
-
-.typeLowLight {
-  color: #869099;
 }
 
 .pbl {
@@ -157,11 +177,19 @@ a, a:hover {
 }
 
 .pbm {
-  padding-bottom: 10px! important;
+  padding-bottom: 10px !important;
+}
+
+.pbs {
+  padding-bottom: 5px !important;
 }
 
 .pbn {
   padding-bottom: 0px! important;
+}
+
+.ptm {
+  padding-top: 10px !important;
 }
 
 .pts {
@@ -172,9 +200,31 @@ a, a:hover {
   padding-top: 0px !important;
 }
 
+.phs {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
 .phm {
   padding-left: 10px !important;
   padding-right: 10px !important;
+}
+
+.pvl {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.pln {
+  padding-left: 0 !important;
+}
+
+.prm {
+  padding-right: 10px !important;
+}
+
+.prn {
+  padding-right: 0 !important;
 }
 
 .pbt8 {
@@ -208,6 +258,12 @@ a, a:hover {
 
 .featureSimilar {
   padding: 30px 0px 20px;
+  background: transparent;
+}
+
+.featureAffordability {
+  margin-top: 40px;
+  margin-bottom: 40px;
   background: transparent;
 }
 
@@ -558,4 +614,312 @@ ul {
 
 .similarMoreButton:hover {
   background-color: #2ed975;
+}
+
+.affordabilityContents {
+  overflow: hidden;
+}
+
+.affordabilityBox {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  border: 1px solid #e8e9ea;
+  border-radius: 4px;
+  background-color: #f5f6f7;
+}
+
+.affordabilityBoxBody {
+  padding: 0 30px;
+}
+
+.affordabilityColumn {
+  width: 25%;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.affordabilityInputDivRed {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 48px;
+  outline: 0;
+  border: 1px solid #e13009;
+  border-radius: 4px;
+  line-height: 1.2;
+  transition: border .2s;
+  background-color: #fff;
+}
+
+.affordabilityInputDiv {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 48px;
+  outline: 0;
+  border: 1px solid #cdd1d4;
+  border-radius: 4px;
+  line-height: 1.2;
+  transition: border .2s;
+  background-color: #fff;
+}
+
+.affordabilityInputDiv:focus-within {
+  border: 1px solid #20c063;
+}
+
+.aff_input {
+  font-size: 18px;
+  padding: .6em .8em .5em;
+  border-radius: 4px;
+  border: 0;
+  outline: 0;
+}
+
+.aff_input_warn {
+  color: #e13009;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.aff_minWidth35 {
+  width: 35px;
+  min-width: 35px;
+}
+
+.aff_minWidth33 {
+  width: 33px;
+  min-width: 33px;
+}
+
+.aff_minWidth52 {
+  width: 52px;
+  min-width: 52px;
+}
+
+.aff_widthRest35 {
+  width: calc(100% - 35px) !important;
+}
+
+.aff_widthRest120 {
+  width: calc(100% - 120px) !important;
+}
+
+.aff_leftInputBorder {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 1px solid #cdd1d4 !important;
+}
+
+.aff_textAlignRight {
+  text-align: right;
+}
+
+.aff_select {
+  width: 100%;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+.aff_selectText {
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.aff_selectArrow {
+  cursor: pointer;
+  font-family: fontello;
+  font-style: normal;
+  font-weight: 400;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1.1em;
+  margin-right: .2em;
+  vertical-align: baseline;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  position: absolute;
+  top: 12px;
+  right: 5px;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.affordabilityGraph {
+  display: flex;
+}
+
+.affordabilityGraphLeft {
+  position: relative;
+  flex-grow: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.affordabilityGraphRight {
+  flex-grow: 3;
+  display: flex;
+}
+
+.affordabilityGraphBar {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  border-right: 1px solid #cdd1d4;
+}
+
+.affordabilityGraphDonut {
+  position: relative;
+  margin-right: 30px;
+  flex-basis: 250px;
+}
+
+.affordabilityGraphTypes {
+  margin-top: 8px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.affordabilityChart {
+  width: 237px;
+  height: 237px;
+  margin: 1em auto;
+  border-radius: 50%;
+  background-image: conic-gradient(
+    rgb(50, 168, 234) calc(var(--val1) * 1deg),
+    white calc(var(--val1) * 1deg) calc((var(--val1) + 0.5) * 1deg),
+    rgb(138, 206, 243) calc(var(--val1) * 1deg) calc(var(--val2) * 1deg),
+    white calc(var(--val2) * 1deg) calc((var(--val2) + 0.5) * 1deg),
+    rgb(251, 177, 0) calc(var(--val2) * 1deg) calc(var(--val3) * 1deg),
+    white calc(var(--val3) * 1deg) calc((var(--val3) + 0.5) * 1deg),
+    rgb(255, 120, 87) calc(var(--val3) * 1deg) calc(var(--val4) * 1deg),
+    white calc(var(--val4) * 1deg) calc((var(--val4) + 0.5) * 1deg),
+    rgb(253, 209, 103) calc(var(--val4) * 1deg)
+  );
+  image-rendering: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.affordabilityChart::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 75px);
+  height: calc(100% - 75px);
+  background: white;
+  border-radius: inherit;
+}
+
+.affordabilityGraphType {
+  margin-top: 11px;
+  margin-bottom: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.affordabilityGraphTypeLeft {
+  text-transform: none;
+  font-size: 17px;
+  text-align: left;
+  flex-grow: 1;
+  line-height: 1.2;
+}
+
+.affordabilityGraphTypeLeft > span {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.affordabilityGraphTypeRight {
+  text-transform: none;
+  font-size: 17px;
+  text-align: right;
+  padding-left: 5px;
+  line-height: 1.2;
+}
+
+.affordabilityChartText {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 10px;
+  z-index: 1;
+}
+
+.affordabilityChartTextUpper {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.affordabilityChartTextLower {
+  color: #869099;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 0;
+}
+
+.affordabilityNextSteps {
+  margin: 20px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.affordabilityNextStepsButton {
+  width: 176px;
+  border: 1px solid #20c063;
+  background: #20c063;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  outline: 0;
+  padding: .6em 1em .5em;
+  text-align: center;
+  transition: all .15s ease-in-out;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.affordabilityNextStepsButton:hover {
+  background: #2ed975;
+  border: 1px solid #2ed975;
+  color: #fff;
+  transition: all .3s ease-in-out;
+  outline: 0;
+}
+
+.affordabilityNextStepsMortgage {
+  cursor: pointer;
+  color: #10a75f;
+  transition: all .15s ease-in-out;
+}
+
+.affordabilityNextStepsMortgage:hover {
+  color: #20c063;
 }
