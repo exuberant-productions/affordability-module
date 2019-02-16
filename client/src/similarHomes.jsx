@@ -69,7 +69,7 @@ class SimilarHomes extends React.Component {
           <div className="similarContents">
             <div style={{ transform: `translateX(${transitionX * 296}px)` }}>
               {similarHomes.map(home => (
-                <div className="similarEach">
+                <div className="similarEach" key={home.id}>
                   <button className="similarLikeButton" type="button" onClick={() => this.toggleHeart(home.id)}><div className={liked[home.id] ? 'similarHeartLiked' : 'similarHeart'}>&#59457;</div></button>
                   <div style={{ marginLeft: '1px', marginRgiht: '1px' }}>
                     <a href={`localhost:3000/${home.id}`} alt={home.address1} target="_blank" rel="noopener noreferrer">
