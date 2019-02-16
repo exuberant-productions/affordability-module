@@ -191,7 +191,7 @@ class Affordability extends React.Component {
                   <div className="affordabilityColumn">
                     <div className="mts mbs">Home Price</div>
                     <div className="mts mbs">
-                      <div className={totalPrice >= 5000 ? "affordabilityInputDiv" : "affordabilityInputDivRed"}>
+                      <div className={totalPrice >= 5000 ? 'affordabilityInputDiv' : 'affordabilityInputDivRed'}>
                         <div className="aff_input aff_minWidth35">$</div>
                         <input type="text" step="5000" className="aff_input aff_widthRest35 aff_textInput" value={formatNumber(totalPrice)} pattern="\d*" onChange={this.handlePriceOnChange} />
                       </div>
