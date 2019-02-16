@@ -1,7 +1,8 @@
+/* eslint-disable */
 module.exports = {
     "extends": "airbnb",
     "env": {
       "browser": true,
-      "jest/globals": true
+      "jest": true
     }
 };
