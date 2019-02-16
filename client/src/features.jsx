@@ -23,7 +23,7 @@ const Features = (props) => {
             <li>{homeDetails.liType}</li>
             <li>{`${homeDetails.liSqft} Square Feet`}</li>
             <li>{`Lot Size: ${homeDetails.liLotSize} sqft`}</li>
-            <li>See Virtual Tour</li>
+            <li><a href="http://2536greenwichstreet.com/" target="_blank" rel="nofollow noopener noreferrer">See Virtual Tour</a></li>
           </ul>
         </div>
         <div className="detailContentRight padLR">
