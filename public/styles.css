@@ -551,13 +551,13 @@ ul {
 }
 
 .similarCarouselLeftIcon {
-  background-image: url(https://static.trulia-cdn.com/images/carousel_assets/control_left-arrow.svg);
+  background-image: url(http://s3-us-west-1.amazonaws.com/affordability-module/control_left-arrow.svg);
   width: 56px;
   height: 56px;
 }
 
 .similarCarouselRightIcon {
-  background-image: url(https://static.trulia-cdn.com/images/carousel_assets/control_right-arrow.svg);
+  background-image: url(http://s3-us-west-1.amazonaws.com/affordability-module/control_right-arrow.svg);
   width: 56px;
   height: 56px;
 }
