@@ -10,6 +10,10 @@ app.set('port', 3001);
 
 app.use(express.static(`${__dirname}/../public`));
 
+app.get('/:homeId', (req, res) => {
+  res.redirect(`/index.html?homeId=${req.params.homeId}`);
+});
+
 app.get('/homeDetails/:homeId', (req, res) => {
   db.getHome(req.params.homeId, (err, data) => {
     if (err) {
