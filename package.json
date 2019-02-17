@@ -11,7 +11,7 @@
     "react-dev": "webpack -d --watch",
     "server": "nodemon server/index.js",
     "db-seed": "mysql -u root -p < schema.sql",
-    "test": "node_modules/.bin/jest --watchAll",
+    "test": "node_modules/.bin/jest --watchAll --verbose",
     "lint": "node_modules/.bin/eslint . --cache"
   },
   "dependencies": {
