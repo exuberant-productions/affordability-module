@@ -193,7 +193,7 @@ class Affordability extends React.Component {
                     <div className="mts mbs">
                       <div className={totalPrice >= 5000 ? 'affordabilityInputDiv' : 'affordabilityInputDivRed'}>
                         <div className="aff_input aff_minWidth35">$</div>
-                        <input type="text" step="5000" className="aff_input aff_widthRest35 aff_textInput" value={formatNumber(totalPrice)} pattern="\d*" onChange={this.handlePriceOnChange} />
+                        <input type="text" step="5000" id="test_homePrice" className="aff_input aff_widthRest35 aff_textInput" value={formatNumber(totalPrice)} pattern="\d*" onChange={this.handlePriceOnChange} />
                       </div>
                     </div>
                     <div className="aff_input_warn" style={totalPrice >= 5000 ? { display: 'none' } : {}}>Please enter a valid home price</div>

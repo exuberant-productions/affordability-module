@@ -6,7 +6,7 @@ const connection = mysql.createConnection(mysqlConfig);
 
 const getHome = (homeId, callback) => {
   // send query, process data, callback with data
-  let query = 'SELECT home.totalPrice as totalPrice, hd.description as description, ';
+  let query = 'SELECT home.id as id, home.totalPrice as totalPrice, hd.description as description, ';
   query += ' ov.type as ovType, ov.rooms as ovRooms, ov.baths as ovBaths, ov.builtIn as ovBuiltIn, ov.howlongOnTrulia as ovHowlongOnTrulia, ';
   query += ' ov.lotSize as ovLotSize, ov.sqft as ovSqft, ov.pricePerSqft as ovPricePerSqft, ov.priceHOA as ovPriceHOA, ov.views as ovViews, ';
   query += ' li.updatedAt as liUpdatedAt, li.rooms as liRooms, li.baths as liBaths, li.type as liType, li.sqft as liSqft, li.lotSize as liLotSize, ';
