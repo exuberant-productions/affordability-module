@@ -14,6 +14,10 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   output: {
@@ -21,7 +25,7 @@ module.exports = {
     path: `${__dirname}/public`,
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.css'],
   },
   plugins: [
     new MiniCssExtractPlugin({

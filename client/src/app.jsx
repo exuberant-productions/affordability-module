@@ -3,6 +3,7 @@ import React from 'react';
 import HomeDetails from './homeDetails';
 import SimilarHomes from './similarHomes';
 import Affordability from './affordability';
+import '../../public/styles.css';
 
 class App extends React.Component {
   constructor(props) {
