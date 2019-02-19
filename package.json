@@ -29,6 +29,7 @@
     "babel-polyfill": "^6.26.0",
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
+    "css-loader": "^2.1.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "eslint": "^5.13.0",
@@ -46,6 +47,7 @@
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.8.1",
     "sinon": "^7.2.3",
+    "style-loader": "^0.23.1",
     "supertest": "^3.4.2",
     "webpack": "^4.29.2",
     "webpack-cli": "^3.2.3"
