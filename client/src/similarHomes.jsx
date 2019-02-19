@@ -67,7 +67,7 @@ class SimilarHomes extends React.Component {
         <div className="pbl" />
         <div onMouseEnter={this.handleOnMouseEnter} onMouseLeave={this.handleOnMouseLeave}>
           <div className="similarContents">
-            <div style={{ transform: `translateX(${transitionX * 296}px)` }}>
+            <div style={{ transform: `translateX(calc(${transitionX * 27}% + ${transitionX * 16}px))` }}>
               {similarHomes.map(home => (
                 <div className="similarEach" key={home.id}>
                   <button className="similarLikeButton" type="button" onClick={() => this.toggleHeart(home.id)}><div className={liked[home.id] ? 'similarHeartLiked' : 'similarHeart'}>&#59457;</div></button>
