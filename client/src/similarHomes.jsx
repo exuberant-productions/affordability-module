@@ -72,7 +72,7 @@ class SimilarHomes extends React.Component {
                 <div className="similarEach" key={home.id}>
                   <button className="similarLikeButton" type="button" onClick={() => this.toggleHeart(home.id)}><div className={liked[home.id] ? 'similarHeartLiked' : 'similarHeart'}>&#59457;</div></button>
                   <div style={{ marginLeft: '1px', marginRgiht: '1px' }}>
-                    <a href={`localhost:3000/${home.id}`} alt={home.address1} target="_blank" rel="noopener noreferrer">
+                    <a className="transition15 noTextDecoration" href={`localhost:3000/${home.id}`} alt={home.address1} target="_blank" rel="noopener noreferrer">
                       <img className="similarHomeImg" src={home.image} alt="" key={home.id} />
                       <div className="similarHomeDetail man pts pbs phm h6 typeWeightNormal">
                         <div className="h5 man typeEmphasize">{formatDollar(home.price)}</div>
@@ -96,7 +96,7 @@ class SimilarHomes extends React.Component {
                 </div>
               ))}
               <div className="similarEach similarMoreOut">
-                <a href="http://www.trulia.com/CA/San_Francisco/">
+                <a className="transition15 noTextDecoration" href="http://www.trulia.com/CA/San_Francisco/">
                   <div style={{ padding: '16px' }}>
                     <div className="toggledContent similarMoreIcon">&#59460;</div>
                     <div className="similarMoreListings">See more listings near San Francisco</div>
