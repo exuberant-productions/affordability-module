@@ -289,9 +289,9 @@ class Affordability extends React.Component {
                 <div className="affordabilityNextSteps">
                   <div className="typeEmphasize mtl h5">Next Steps:</div>
                   <div className="typeWeightNormal mtm h6">See if you quality for this home</div>
-                  <a className="affordabilityNextStepsButton mtm" href="https://www.trulia.com/mortgages/pre-qualified/?omni_src=dbtw:mortgage%20long%20form#/first-time">Get Pre-Qualified</a>
+                  <a className="affordabilityNextStepsButton mtm transition15 noTextDecoration" href="https://www.trulia.com/mortgages/pre-qualified/?omni_src=dbtw:mortgage%20long%20form#/first-time">Get Pre-Qualified</a>
                   <div className="typeLowLight mts mbs">or</div>
-                  <a className="affordabilityNextStepsMortgage mts mbs" href="https://www.trulia.com/mortgage-rates/San_Francisco,CA/?omni_src=mortgage%7Cpdp_epc&property_value=%248%2C455%2C000&value=8455000&zip=94123&down_payment=1%2C691%2C000&down=1691000&loan_amount=%246%2C764%2C000&cta=rates&auto=true#request=">See today&#39;s mortgage rates</a>
+                  <a className="affordabilityNextStepsMortgage mts mbs transition15 noTextDecoration" href="https://www.trulia.com/mortgage-rates/San_Francisco,CA/?omni_src=mortgage%7Cpdp_epc&property_value=%248%2C455%2C000&value=8455000&zip=94123&down_payment=1%2C691%2C000&down=1691000&loan_amount=%246%2C764%2C000&cta=rates&auto=true#request=">See today&#39;s mortgage rates</a>
                 </div>
               </div>
             </div>

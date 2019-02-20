@@ -50,19 +50,11 @@ span {
   box-sizing: inherit;
 }
 
-a {
-  color: #10a75f;
+.transition15 {
   transition: all .15s ease-in-out;
-  cursor: pointer;
 }
 
-a:hover {
-  color: #20c063;
-  transition: all .3s ease-in-out;
-  outline: 0;
-}
-
-a, a:hover {
+.noTextDecoration {
   text-decoration: none;
 }
 
@@ -610,6 +602,7 @@ ul {
   padding: .6em 1em .5em;
   text-align: center;
   cursor: pointer;
+  transition: all .15s ease-in-out;
 }
 
 .similarMoreButton:hover {

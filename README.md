@@ -20,6 +20,13 @@ npm install
 
 ## Development
 
+To seed data into mysql
+(mysql @5.7, and you might have to change db-seed script in package.json and db/config.js to use appropriate username and password)
+
+```
+npm run db-seed
+```
+
 To run server
 
 ```
