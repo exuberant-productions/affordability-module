@@ -263,6 +263,16 @@ span {
   margin-top: 0 !important;
 }
 
+.featureVirtualTour {
+  cursor: pointer;
+  color: #10a75f;
+  transition: all .15s ease-in-out;
+}
+
+.featureVirtualTour:hover {
+  color: #20c063;
+}
+
 .marginLeft7 {
   margin-left: 7px;
 }
