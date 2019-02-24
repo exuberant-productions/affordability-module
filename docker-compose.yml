@@ -1,0 +1,22 @@
+version: "3"
+services:
+  mysql:
+    build: db-docker/.
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+    ports:
+      - "3306:3306"
+    restart: unless-stopped
+  web:
+    image: sang-feature-docker
+    ports:
+      - "3001:3001"
+    environment:
+      PORT: 3001
+    links:
+      - "mysql:mysql"
+    depends_on:
+      - mysql
+    expose:
+      - 3001
+    command: ["npm", "run", "server"]
