@@ -1,6 +1,7 @@
 module.exports = {
-  host: 'localhost',
+  host: 'mysql',
   user: 'root',
   password: '',
-  database: 'affordabilityModule'
+  database: 'affordabilityModule',
+  port: 3306,
 };
