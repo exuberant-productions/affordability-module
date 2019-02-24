@@ -18,8 +18,8 @@ class App extends React.Component {
     let homeId = new URLSearchParams(window.location.search).get('homeId');
     if (!homeId || !parseInt(homeId, 10)) homeId = 1;
     Promise.all([
-      fetch(`http://localhost:3001/homeDetails/${homeId}`).then(value => value.json()),
-      fetch(`http://localhost:3001/similarHomes/${homeId}`).then(value => value.json()),
+      fetch(`/homeDetails/${homeId}`).then(value => value.json()),
+      fetch(`/similarHomes/${homeId}`).then(value => value.json()),
     ]).then(([response1, response2]) => (
       [response1, response2]
     ))
